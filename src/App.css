@@ -256,3 +256,39 @@
 .card:hover {
   transform: scale(1.1);
 }
+
+.no-items-message {
+  text-align: center;
+  margin: 50px auto;
+  font-weight: 600;
+  font-size: 23px;
+  color: #888;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.search-input {
+  width: 250px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sort-dropdown {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  appearance: none;
+}
+
+.sort-dropdown:focus {
+  outline: none;
+}
