@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://prickly-clam-tweed-jacket.cyclic.app/';
 
 const api = {
   getItems: async () => {
