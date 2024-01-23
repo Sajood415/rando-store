@@ -1,11 +1,13 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
+import { toast } from 'react-toastify';
 
 const Item = ({ item }) => {
   const { dispatch } = useCart();
 
   const addToCart = () => {
     dispatch({ type: 'ADD_TO_CART', payload: item });
+    toast.success('Added to Cart', { position: 'top-right', autoClose: 1000,});
   };
 
   const truncateText = (text, maxLength) => {
